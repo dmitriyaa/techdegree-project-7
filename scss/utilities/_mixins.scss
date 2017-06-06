@@ -1,0 +1,10 @@
+//Media queries
+@mixin mq($break) {
+   @if $break == "tablet" {
+      @media (min-width: $brk-narrow) {
+         @content;
+      }
+   } @else {
+      @error "Whoops! No value could be retrived for '#{$break}'";
+   }
+}

@@ -1,5 +1,8 @@
 .container {
-   max-width: 1280px;
    margin: 0 auto;
-   background-color: #F7F7F7;
+
+   @include mq(tablet) {
+      width: 80%;
+      max-width: 1280px;
+   }
 }
