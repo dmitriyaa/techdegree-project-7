@@ -390,20 +390,47 @@ template {
   display: none; }
 
 body {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', sans-serif; }
 
 p {
-  font-size: 1.2em; }
+  font-size: 1.1em;
+  line-height: 1.5;
+  color: #404041; }
 
 video {
   width: 100%; }
 
 .container {
   max-width: 1280px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-color: #F7F7F7; }
+
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #F7F7F7; }
 
 .transcript {
   padding-left: 1rem;
   padding-right: 1rem; }
+  .transcript__paragraph:last-of-type {
+    margin-bottom: 0; }
+
+.signature__copy {
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 3px; }
+.signature__link {
+  font-family: 'Grand Hotel', sans-serif;
+  font-size: 27px;
+  text-transform: capitalize;
+  color: #1457A6;
+  text-decoration: none; }
+
+.line-separator {
+  width: 90%;
+  margin: 34px auto 0;
+  border-bottom: 1.5px solid #1457A6; }
 
 /*# sourceMappingURL=application.css.map */
