@@ -1,8 +1,13 @@
 .transcript {
+
    padding-left: 1rem;
    padding-right: 1rem;
 
-   &__paragraph:last-of-type {
-      margin-bottom: 0;
+   &__paragraph {
+      line-height: 2;
+
+      &:last-of-type {
+         margin-bottom: 0;
+      }
    }
 }

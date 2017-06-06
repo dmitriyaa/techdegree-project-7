@@ -404,12 +404,22 @@ p {
 video {
   width: 100%; }
 
+.is-highlited {
+  display: inline-block;
+  padding: 0 5px;
+  background-color: #FCF28D;
+  border-radius: 8px; }
+
 .container {
   margin: 0 auto; }
   @media (min-width: 768px) {
     .container {
       width: 80%;
       max-width: 1280px; } }
+
+@media (min-width: 768px) {
+  .video-wrapper {
+    margin-top: 1.1em; } }
 
 .footer {
   text-align: center;
@@ -418,8 +428,10 @@ video {
 .transcript {
   padding-left: 1rem;
   padding-right: 1rem; }
-  .transcript__paragraph:last-of-type {
-    margin-bottom: 0; }
+  .transcript__paragraph {
+    line-height: 2; }
+    .transcript__paragraph:last-of-type {
+      margin-bottom: 0; }
 
 .signature__copy {
   font-family: 'Oswald', sans-serif;
@@ -441,8 +453,10 @@ video {
     .line-separator {
       width: 60%; } }
 
-@media (min-width: 768px) {
-  .video-wrapper {
-    margin-top: 1.1em; } }
+.is-highlited {
+  display: inline-block;
+  padding: 0 5px;
+  background-color: #FCF28D;
+  border-radius: 8px; }
 
 /*# sourceMappingURL=application.css.map */
