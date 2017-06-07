@@ -1,7 +1,11 @@
-.main-video .mejs__controls {
-   background-color: #384047;
-}
+.msin-video {
+   .mejs {
+      &__controls {
+         background-color: #384047;
+      }
 
-.main-video .mejs__time-current {
-   background-color: #FCF28D;
+      &__time-current {
+         background-color: #FCF28D;
+      }
+   }
 }

@@ -1,7 +1,7 @@
 //Media queries
 @mixin mq($break) {
    @if $break == "tablet" {
-      @media (min-width: $brk-narrow) {
+      @media (min-width: $brk-wide) {
          @content;
       }
    } @else {

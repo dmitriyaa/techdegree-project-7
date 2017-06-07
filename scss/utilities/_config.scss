@@ -1,2 +1,24 @@
+// Google Fonts
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Open+Sans:400,600,700),
+        url(https://fonts.googleapis.com/css?family=Grand+Hotel|Oswald:200,300,400,500,600,700),
+        url(https://fonts.googleapis.com/css?family=Open+Sans:400,400i);
+
+// Variables
+
+// Descriptive color variables
+$white          : #fff;
+$black          : #000;
+
+// Functional color variables
+
+
+// Font stacks
+
+$stack-sans-serif    : 'Helvetica Neue', 'Helvetica', sans-serif;
+$stack-open-sans     : 'Open Sans', $stack-sans-serif;
+$stack-oswald        : 'Oswald', $stack-sans-serif;
+$stack-grand-hotel   : 'Grand Hotel', $stack-sans-serif;
+
+
 //Media query breakpoints
-$brk-narrow: 768px;
+$brk-wide: 768px;
