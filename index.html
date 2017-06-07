@@ -13,8 +13,8 @@
    </head>
    <body>
       <div class="container">
-         <div class="video-wrapper">
-            <video id="main-video">
+         <div class="video-wrapper main-video">
+            <video id="main-video" autoplay>
                <source src="videos/video.mp4" type="video/mp4">
                <source src="videos/video.ogg" type="video/ogg">
             </video>
@@ -53,8 +53,9 @@
       <script src="js/highlight-transcript.js"></script>
       <script>
          $('#main-video').mediaelementplayer({
+            poster: "mediaElement/poster.png",
             videoHeight: "100%",
-            poster: "mediaElement/poster.png"
+            startVolume: '0.5',
          });
       </script>
    </body>

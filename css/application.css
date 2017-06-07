@@ -444,6 +444,12 @@ p {
     .line-separator {
       width: 60%; } }
 
+.main-video .mejs__controls {
+  background-color: #384047; }
+
+.main-video .mejs__time-current {
+  background-color: #FCF28D; }
+
 .is-highlited {
   background-color: #FCF28D;
   border-radius: 4px; }
