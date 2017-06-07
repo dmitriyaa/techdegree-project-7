@@ -21,7 +21,7 @@
          </div>
          <div class="transcript">
             <p class="transcript__paragraph">
-               <span class="test" data-time="4.130">Now that we've looked at the architecture of the internet, let's see how you might</span>
+               <span data-time="4.130">Now that we've looked at the architecture of the internet, let's see how you might</span>
                <span data-time="7.535">connect your personal devices to the internet inside your house.</span>
                <span data-time="11.270">Well there are many ways to connect to the internet, and</span>
                <span data-time="13.960">most often people connect wirelessly.</span>
@@ -47,13 +47,14 @@
       </div>
       <footer class="footer signature">
          <p class="signature__copy">Handcrafted by</p>
-         <a class="signature__link" href="#">Dmitriy An</a>
+         <a class="signature__link" href="https://github.com/dmitriyaa" target="_blank">Dmitriy An</a>
       </footer>
 
       <script src="js/highlight-transcript.js"></script>
       <script>
          $('#main-video').mediaelementplayer({
             poster: "js/mediaElement/poster.png",
+            videoWidth: "100%",
             videoHeight: "100%",
             startVolume: '0.5',
          });
