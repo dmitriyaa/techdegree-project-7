@@ -401,15 +401,6 @@ p {
   line-height: 1.5;
   color: #404041; }
 
-video {
-  width: 100%; }
-
-.is-highlited {
-  display: inline-block;
-  padding: 0 5px;
-  background-color: #FCF28D;
-  border-radius: 8px; }
-
 .container {
   margin: 0 auto; }
   @media (min-width: 768px) {
@@ -454,9 +445,7 @@ video {
       width: 60%; } }
 
 .is-highlited {
-  display: inline-block;
-  padding: 0 5px;
   background-color: #FCF28D;
-  border-radius: 8px; }
+  border-radius: 4px; }
 
 /*# sourceMappingURL=application.css.map */

@@ -2,50 +2,42 @@ document.addEventListener('DOMContentLoaded', () => {
    const video = document.querySelector('#main-video');
    const transcript__pieces = document.querySelectorAll('.transcript span');
 
-   video.addEventListener('timeupdate', (e) => {
-      // t means current time of the video
-      let t = video.currentTime;
-
-      // remove styling from all the spans
-      for (let i = 0; i < transcript__pieces.length; i += 1) {
-         transcript__pieces[i].className = "";
+   // function that removes classes from array elements
+   function removeClass(array) {
+      for (let i = 0; i < array.length; i += 1) {
+         array[i].className = "";
       }
+   }
 
-      // highlight appropriate spann
-      if (t < 0.24) {
-         
-      } else if (t < 4.13) {
-         transcript__pieces[0].className = "is-highlited";
-      } else if (t < 7.535) {
-         transcript__pieces[1].className = "is-highlited";
-      } else if (t < 11.27) {
-         transcript__pieces[2].className = "is-highlited";
-      } else if (t < 13.960) {
-         transcript__pieces[3].className = "is-highlited";
-      } else if (t < 17.940) {
-         transcript__pieces[4].className = "is-highlited";
-      } else if (t < 22.370) {
-         transcript__pieces[5].className = "is-highlited";
-      } else if (t < 26.880) {
-         transcript__pieces[6].className = "is-highlited";
-      } else if (t < 30.920) {
-         transcript__pieces[7].className = "is-highlited";
-      } else if (t < 34.730) {
-         transcript__pieces[8].className = "is-highlited";
-      } else if (t < 39.430) {
-         transcript__pieces[9].className = "is-highlited";
-      } else if (t < 41.190) {
-         transcript__pieces[10].className = "is-highlited";
-      } else if (t < 46.3) {
-         transcript__pieces[11].className = "is-highlited";
-      } else if (t < 49.27) {
-         transcript__pieces[12].className = "is-highlited";
-      } else if (t < 53.76) {
-         transcript__pieces[13].className = "is-highlited";
-      } else if (t < 57.78) {
-         transcript__pieces[14].className = "is-highlited";
-      } else if (t < 60.15) {
-         transcript__pieces[15].className = "is-highlited";
+   // As the media playback time changes, sentences in the transcript are highlighting.
+   video.addEventListener('timeupdate', (e) => {
+      let current_time = video.currentTime;
+
+      removeClass(transcript__pieces);
+
+      for (let i = 0; i < transcript__pieces.length; i += 1) {
+         let transcript__piece = transcript__pieces[i];
+         let transcript__time = transcript__piece.getAttribute('data-time');
+
+         if (current_time < transcript__time) {
+            transcript__piece.className = "is-highlited";
+            break;
+         }
       }
    });
+
+   // When the user clicks on any sentence in the transcript the video player jumps to the appropriate time in the video.
+   for (let i = 0; i < transcript__pieces.length; i += 1) {
+      let transcript__piece = transcript__pieces[i];
+      // contains reference to the previous span element, because start time of current transcript piece is end time of previous
+      let transcript__piece_previous = transcript__pieces[i - 1];
+
+      transcript__piece.addEventListener('click', (e) => {
+         if (transcript__piece_previous == null) {
+            video.currentTime = 0;
+         } else {
+            video.currentTime = transcript__piece_previous.getAttribute('data-time');
+         }
+      });
+   }
 });
