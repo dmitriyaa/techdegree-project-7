@@ -447,9 +447,9 @@ p {
     .line-separator {
       width: 60%; } }
 
-.msin-video .mejs__controls {
+.main-video .mejs__controls {
   background-color: #384047; }
-.msin-video .mejs__time-current {
+.main-video .mejs__time-current {
   background-color: #FCF28D; }
 
 .is-highlited {
