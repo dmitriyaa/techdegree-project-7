@@ -1,0 +1,18 @@
+// Import if Google Fonts URL is defined
+
+@if variable-exists(font-url--google-open-sans) {
+   @import url($font-url--google-open-sans);
+}
+
+@if variable-exists(font-url--google-oswal) {
+   @import url($font-url--google-oswal);
+}
+
+@if variable-exists(font-url--google-grand-hotel) {
+   @import url($font-url--google-grand-hotel);
+}
+
+// Calculate em values
+@function em($target, $context: $base__font-size) {
+   @return ($target / $context) * 1em;
+}

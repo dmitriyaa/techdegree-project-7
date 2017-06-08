@@ -4,11 +4,11 @@
 
 body {
    font-family: $stack-open-sans;
-   background-color: #F7F7F7;
+   background-color: $color-area--light;
 }
 
 p {
-   font-size: 1.1em;
+   font-size: em(18px);
    line-height: 1.5;
-   color: #404041;
+   color: $color-text;
 }

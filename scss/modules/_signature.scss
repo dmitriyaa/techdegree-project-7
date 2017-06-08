@@ -1,16 +1,16 @@
 .signature {
    &__copy {
       font-family: $stack-oswald;
-      font-size: 14px;
+      font-size: em(14px);
       text-transform: uppercase;
-      margin-bottom: 3px;
+      margin-bottom: em(3px);
    }
 
    &__link {
       font-family: $stack-grand-hotel;
-      font-size: 27px;
+      font-size: em(27px);
       text-transform: capitalize;
-      color: #1457A6;
+      color: $color-secondary;
       text-decoration: none;
    }
 }

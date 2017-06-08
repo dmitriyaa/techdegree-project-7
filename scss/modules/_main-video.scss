@@ -1,11 +1,11 @@
 .main-video {
    .mejs {
       &__controls {
-         background-color: #384047;
+         background-color: $color-area---dark;
       }
 
       &__time-current {
-         background-color: #FCF28D;
+         background-color: $color-primary;
       }
    }
 }

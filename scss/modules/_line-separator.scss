@@ -1,7 +1,7 @@
 .line-separator {
    width: 90%;
-   margin: 34px auto 0;
-   border-bottom: 1.5px solid #1457A6;
+   margin: em(34px) auto 0;
+   border-bottom: 1.5px solid $color-secondary;
 
    @include mq(tablet) {
       width: 60%;
