@@ -1,4 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+   $('#main-video').mediaelementplayer({
+      poster: "js/mediaElement/poster.png",
+      videoWidth: "100%",
+      videoHeight: "100%",
+      startVolume: '0.5',
+   });
+
    const video = document.querySelector('#main-video');
    const transcript__pieces = document.querySelectorAll('.transcript span');
 
