@@ -11,7 +11,7 @@ The transcript highlights as the video progresses.
 
 When a user clicks any part of the transcript it takes them to the appropriate place in the video.
 
-## Screenshot
+## Screenshots
 ![creenshot of the website](https://raw.githubusercontent.com/dmitriyaa/storage/master/screenshot--techdegree-project-7.png)
 
 Here is a [link](https://dmitriyaa.github.io/techdegree-project-7) to live demo.
